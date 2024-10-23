@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?famliy=Poppins:wgth@400;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+}
+
+.sidebar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 125px;
+    height: 100vh;
+    padding: 0 1.7rem;
+    color: black;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    background: rgba(133, 99, 186, 255);
+}
+
+.sidebar:hover{
+    width: 270px;
+    transition: 0.2s;
+}
+
+.logo {
+    height: 80px;
+    padding: 16px;
+}
+
+.menu {
+    height: 80%;
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    padding: 1rem;
+    margin: 8px 0;
+    /* border-right-width: 100px; */
+    /* border-left-width: 120000px; */
+    /* width: 200px; */
+    border-radius: 8px;
+    transition: all 0.5s ease;
+}
+
+/* .menu li:hover, .active{
+    background: white;
+} */
+
+
+.menu img{
+    width: 100px;
+    height: 90px;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+.menu li:hover, .active {
+    /* background-color: #FF0000; Set an initial color for demonstration */
+    background-color: whitesmoke;
+    /* transition: background-color 0.1s ease-in-out; Add a smooth transition */
+}
+
+.menu li:hover, .active {
+    background-color: hsla(random(360), 100%, 50%, 0.8); /* Random color with alpha */
+}
+.menu a{
+    color: black;
+    font-size: 14px;
+    text-decoration: dashed;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.menu a span{
+    overflow: hidden;
+}
+
+.menu a i{
+    font-size: 1.2rem;
+}
+
+.logout{
+    position: absolute;
+    /* bottom: -50%; */
+    /* left: 0; */
+    /* top: 100%; */
+    width: 100%;
+}
+
+.main--container{
+    position: relative;
+    background: #ebe9e9;
+    width: 100%;
+    padding: 1rem;
+}
+
+.header--wapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px 2rem;
+    margin-bottom: 1rem;
+}
+
+.header--wapper img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.header--title{
+    color: rgba(133, 99, 186, 255);
+}
+
+.user--info{
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* Cards Box */
+
+.card--container{
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.card--wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.title{
+    color: rgba(133, 99, 186, 255)  ;
+    font-size: 30px;
+    font-family: 200;
+}
+.payment--card{
+    background: rgb(299, 233, 233);
+    border-radius: 10px;
+    padding: 1.3rem;
+    width: 290px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.5s ease-in-out;
+}
+
+.payment--card:hover {
+    transform: rotateY('-5px');
+}
+
+.card--header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.amount--value{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+
+.detail{
+    font-size: 14px;
+    color: #77777777;
+    letter-spacing: 2px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* colors */
+
+.light-red{
+    background: rgb(241, 0, 0);
+}
+
+.light-purple{
+    background: rgb(254, 226, 254);
+}
+
+.light-green{
+    background: rgb(235, 254, 235);
+}
+
+.light-blue{
+    background: rgb(236, 236, 254);
+}
+
+.dark-red{
+    background: red;
+}
+
+.dark-purple{
+    background: purple;
+}
+
+.dark-green{
+    background: green;
+}
+
+.dark-blue{
+    background: blue;
+}
